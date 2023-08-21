@@ -6,6 +6,11 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
 header{
     font: normal normal 1em 'Passion One', cursive;
     color: white;
@@ -15,8 +20,37 @@ header{
     padding: 50px;
 }
 
-h1{
-    font-size: 3em;
+header > h1{
+    font-size: 4.5vw;
+    font-variant: small-caps;
+}
+
+section{
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 3vw;
+    line-height: 2em;
+}
+
+section.image{
+    color: white;
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.image > p{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+section#image-1{
+    background-image: url(imagens/background001.jpg);
+}
+
+section#image-2{
+    background-image: url(imagens/background002.jpg);
 }
 
 a{
@@ -24,27 +58,22 @@ a{
     color: white;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 body{
     font: normal 1em 'Sriracha', cursive;
     background-color: white;
 }
 
-main p{
-    line-height: 30px;
-}
-
-section{
-    padding: 50px 20px;
+section.image > p{
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
     text-align: center;
     color: white;
     background-color: black;
-}
-
-section#image-section-1{
-    color: white;
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
 }
